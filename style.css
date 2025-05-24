@@ -74,7 +74,7 @@ header .left{
 }
 header .right{
     padding: 2em;
-    color: var(--white);
+    color: var(--Font-main-color);
     text-align: center;
 }
 header .right img {
@@ -120,6 +120,10 @@ section {
     flex-grow: 1;
     flex-wrap: wrap;
 }
+#section-2 div {
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
 /* ทำให้ตารางกว้าง 100% ให้เท่ากับขนาดของ section-3 */
 #section-3 table {
     width: 100%;
@@ -147,8 +151,9 @@ section {
         justify-content: center;
         align-items: center;
     }
-    header .left h1{
+    header .left>h1{
         margin-bottom: 1em ;
+        text-align: center;
     } 
     #section-2{
         flex-direction: column;
