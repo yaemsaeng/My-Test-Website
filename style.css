@@ -1,0 +1,156 @@
+:root  { 
+    --Font-main-color  : white; 
+    --bg-color: rgb(85, 105, 220);
+
+ } 
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+nav {
+    background-color: var(--bg-color);
+    
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--Font-main-color);
+    padding: 1em;
+}
+
+nav ul li a:hover{
+    color: rgb(198, 190, 238);
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+header {
+    color: var(--Font-main-color);
+    background-color: var(--bg-color);
+}
+
+header .container {
+    display: flex;
+}
+
+header address {
+    font-style: normal;
+}
+
+header a{
+    color: inherit;
+}
+header p {
+    margin: 0;
+}
+
+header h2 {
+    margin-bottom: 0.7em;
+}
+
+header .left{
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2em;
+    background-image: url(img/picture.png);
+    background-size: cover;
+    background-position:top;
+    color: var(--white);
+    text-shadow: 1px 1px 0 black;
+}
+header .right{
+    padding: 2em;
+    color: var(--white);
+    text-align: center;
+}
+header .right img {
+    width: 100px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+header .right p {
+    padding: 0.5em
+}
+header .right img {
+    display: inline-block;
+    margin-bottom: 2em;
+    width: 150px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+header .right address {
+  line-height: 1.8; 
+}
+header .right > a{
+    display: inline-block;
+    margin: 2em;
+    padding: 1em 2em;
+    background-color: white;
+    color: var(--bg-color);
+    text-decoration: none;
+}
+header .right > a:hover{
+    background-color: rgb(198, 190, 238);
+}
+
+section {
+    padding: 2em;
+}
+#section-1 {
+    background-color: rgba(179, 185, 221, 0.462)
+}
+#section-2 {
+    display: flex;
+}
+#section-2 div {
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+/* ทำให้ตารางกว้าง 100% ให้เท่ากับขนาดของ section-3 */
+#section-3 table {
+    width: 100%;
+}
+/* ทำให้เนื้อหาส่วนซ้ายที่เป็น th มีขนาดแค่ 20 % ของขนาดตาราง */
+#section-3 th {
+    width: 20%;
+    text-align: right;
+    padding-right: 0.5em;
+}
+/* ทำให้ส่วน progress มีขนาดเต็มตารางฝั่งซ้าย*/
+#section-3 progress {
+    width: 100%;
+}
+ @media screen and (max-width: 600px){
+    ul {
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    
+    header .left{
+        line-height: 1.5;
+        justify-content: center;
+        align-items: center;
+    }
+    header .left h1{
+        margin-bottom: 1em ;
+    } 
+    #section-2{
+        flex-direction: column;
+    }  
+ }
